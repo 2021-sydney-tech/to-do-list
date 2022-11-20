@@ -1,8 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
 .App {
+  margin: 50px 0;
   text-align: center;
+}
+.top-bar {
+  margin-bottom: 50px;
+}
+
+.task-container{
+  display: flex;
+  justify-content: center;
+}
+.task {
+  width: 400px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
 }
 
 button {
+  margin-left: 5px;
   border-radius: 5px;
 }
-

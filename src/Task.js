@@ -1,4 +1,4 @@
-export const Task = (props, key) => {
+export const Task = (props) => {
   return (
     <div className="task-container">
       <div className="task">

@@ -45,15 +45,17 @@ function App() {
       </div>
 
       <div className="list">
-        {toDoList.map((task) => {
+        {toDoList.map((task, key) => {
           return (
-            <Task
-              taskName={task.taskName}
-              id={task.id}
-              completed={task.completed}
-              deleteTask={deleteTask}
-              completeTask={completeTask}
-            />
+            <div key={key}>
+              <Task
+                taskName={task.taskName}
+                id={task.id}
+                completed={task.completed}
+                deleteTask={deleteTask}
+                completeTask={completeTask}
+              />
+            </div>
           );
         })}
       </div>
